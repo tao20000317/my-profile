@@ -1,0 +1,89 @@
+.nav {
+    position: relative;
+    overflow: hidden;
+    overflow-y: auto;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+.nav::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.nav-items-container {
+    text-align: center;
+
+    display: flex;
+}
+
+.nav-link {
+    transition: all 0.2s ease-in-out;
+
+    /* 
+        set a fixed width so that they don't jostle when the font weight changes 
+        you might need to increase the width if you have an item with longer text
+        there's definitely a better way to do this, but I can't think of it right now
+    */
+    width: 100px;
+    height: 2rem;
+
+    padding: 0.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover {
+    color: #1f2937;
+}
+
+.nav-link.active {
+    font-weight: bold;
+    color: #1f2937;
+}
+
+.active-item-indicator {
+    position: absolute;
+    inset: 0 auto auto 0;
+    background-color: #ebebeb;
+    border-radius: 0.25rem;
+    z-index: -1;
+}
+
+/* mobile version */
+.nav-items-container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.active-item-indicator {
+    height: 100%;
+}
+
+.visible-mobile {
+    display: block;
+}
+
+.visible-desktop {
+    display: none;
+}
+
+/* desktop version */
+@media (min-width: 768px) {
+    .nav-items-container {
+        flex-direction: column;
+    }
+
+    .active-item-indicator {
+        height: 2rem;
+    }
+
+    .visible-mobile {
+        display: none;
+    }
+
+    .visible-desktop {
+        display: block;
+    }
+}
