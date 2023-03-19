@@ -1,9 +1,18 @@
 import clsx from "classnames"
+import localFont from "@next/font/local"
+
 import Logo from "@/components/logo"
 import Navbar from "@/components/navbar"
 import "./globals.css"
 
 import styles from "./layout.module.css"
+
+const kaisei = localFont({
+    src: "../../public/fonts/kaisei-tokumin-latin-700-normal.woff2",
+    weight: "700",
+    variable: "--font-kaisei",
+    display: "swap",
+})
 
 export const metadata = {
     title: "My Personal Website",
@@ -12,7 +21,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
     return (
-        <html lang="en">
+        <html lang="en" className={kaisei.className}>
             <body>
                 <div className={styles["grid-container"]}>
                     <div className={clsx(styles.logo, styles["grid-item"])}>

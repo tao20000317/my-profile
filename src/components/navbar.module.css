@@ -4,6 +4,8 @@
     overflow-y: auto;
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
+
+    padding: 0 2px; /* This is to prevent the active item indicator rounding to get cut off */
 }
 
 .nav::-webkit-scrollbar {
@@ -11,23 +13,19 @@
 }
 
 .nav-items-container {
-    text-align: center;
-
     display: flex;
+
+    justify-content: center;
+
+    gap: 0.5rem;
 }
 
 .nav-link {
     transition: all 0.2s ease-in-out;
 
-    /* 
-        set a fixed width so that they don't jostle when the font weight changes 
-        you might need to increase the width if you have an item with longer text
-        there's definitely a better way to do this, but I can't think of it right now
-    */
-    width: 100px;
     height: 2rem;
 
-    padding: 0.5rem;
+    padding: 0.25rem 0.5rem;
 
     display: flex;
     align-items: center;
@@ -73,6 +71,7 @@
 @media (min-width: 768px) {
     .nav-items-container {
         flex-direction: column;
+        gap: 0.5rem;
     }
 
     .active-item-indicator {

@@ -1,5 +1,7 @@
 .grid-container {
     display: grid;
+
+    padding-bottom: 1rem;
 }
 
 .grid-item {
@@ -26,8 +28,6 @@
 }
 
 .main {
-    padding-top: 1rem;
-
     grid-row: 3;
 }
 
@@ -40,8 +40,6 @@
         grid-template-columns: 8rem auto;
         grid-template-rows: 1fr auto;
 
-        grid-gap: 1rem;
-
         padding-top: 3rem;
     }
 
@@ -49,14 +47,14 @@
         grid-column: 1;
         grid-row: 1;
 
-        justify-content: end;
+        justify-content: center;
     }
 
     .navbar {
         grid-column: 1;
         grid-row: 2;
 
-        justify-content: end;
+        justify-content: center;
     }
 
     .main {

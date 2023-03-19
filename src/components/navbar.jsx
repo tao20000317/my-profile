@@ -18,15 +18,21 @@ import styles from "./navbar.module.css"
 const navItems = {
     "/": {
         name: "home",
-        mobileX: 20,
-        desktop: [19, 0],
-        width: 61,
+        mobileX: 0,
+        desktop: [17, 1],
+        width: 63,
     },
     "/about": {
         name: "about",
-        mobileX: 118,
-        desktop: [19, 33],
-        width: 61,
+        mobileX: 69,
+        desktop: [17, 41],
+        width: 63,
+    },
+    "/tech-stack": {
+        name: "tech stack",
+        mobileX: 137,
+        desktop: [1, 82],
+        width: 96,
     },
 }
 
