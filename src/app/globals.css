@@ -1,6 +1,8 @@
 :root {
-    --foreground-rgb: 52, 51, 50;
-    --background-rgb: 254, 254, 254;
+    --foreground-rgb: rgb(52, 51, 50);
+    --background-rgb: rgb(254, 254, 254);
+    --active-link-rgb: rgb(16, 84, 94);
+    --nav-bubble-rgb: rgb(244, 244, 244);
 }
 
 * {
@@ -16,8 +18,8 @@ body {
 }
 
 body {
-    color: rgb(var(--foreground-rgb));
-    background-color: rgb(var(--background-rgb));
+    color: var(--foreground-rgb);
+    background-color: var(--background-rgb);
 }
 
 a {

@@ -3,7 +3,7 @@ import styles from "./page.module.css"
 
 const techStack = [
     {
-        name: "React.js",
+        name: "React",
         description: "A JavaScript library for building user interfaces",
         url: "https://reactjs.org/",
         svg: "react.svg",

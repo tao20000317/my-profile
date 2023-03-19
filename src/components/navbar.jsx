@@ -43,7 +43,7 @@ export default function Navbar() {
         <nav className={styles.nav}>
             <div className={styles["nav-items-container"]}>
                 <NavItems pathname={pathname} />
-                <NavIndicator pathname={pathname} />
+                <NavBubble pathname={pathname} />
             </div>
         </nav>
     )
@@ -70,7 +70,7 @@ function NavItems(props) {
     })
 }
 
-function NavIndicator(props) {
+function NavBubble(props) {
     const { pathname } = props
 
     const {
@@ -90,7 +90,7 @@ function NavIndicator(props) {
             {/* Mobile version, hidden on desktop */}
             <div className={styles["visible-mobile"]}>
                 <motion.div
-                    className={styles["active-item-indicator"]}
+                    className={styles["nav-bubble"]}
                     layoutId="mobile-nav-layout"
                     initial={{
                         opacity: 0,
@@ -107,7 +107,7 @@ function NavIndicator(props) {
             {/* Desktop version, hidden on mobile */}
             <div className={styles["visible-desktop"]}>
                 <motion.div
-                    className={styles["active-item-indicator"]}
+                    className={styles["nav-bubble"]}
                     layoutId="desktop-nav-layout"
                     initial={{
                         opacity: 0,

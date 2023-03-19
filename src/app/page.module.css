@@ -13,3 +13,26 @@
     line-height: 1.5;
     text-align: justify;
 }
+
+.email {
+    display: inline-block;
+    margin: 1rem 0 0 -0.25rem;
+    padding: 0.5rem;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.email.clicked {
+    animation: blink 1s infinite alternate; /* add a blink animation when the email is clicked */
+}
+
+@keyframes blink {
+    from {
+        background-color: #dadada;
+    }
+    to {
+        background-color: var(--background-rgb);
+    }
+}

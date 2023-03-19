@@ -5,7 +5,7 @@
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
 
-    padding: 0 2px; /* This is to prevent the active item indicator rounding to get cut off */
+    padding: 0 2px; /* The 2px is to prevent the nav bubble from getting cut off */
 }
 
 .nav::-webkit-scrollbar {
@@ -33,18 +33,17 @@
 }
 
 .nav-link:hover {
-    color: #1f2937;
+    color: var(--active-link-rgb);
 }
 
 .nav-link.active {
-    font-weight: bold;
-    color: #1f2937;
+    color: var(--active-link-rgb);
 }
 
-.active-item-indicator {
+.nav-bubble {
     position: absolute;
     inset: 0 auto auto 0;
-    background-color: #ebebeb;
+    background-color: var(--nav-bubble-rgb);
     border-radius: 0.25rem;
     z-index: -1;
 }
@@ -55,7 +54,7 @@
     align-items: center;
 }
 
-.active-item-indicator {
+.nav-bubble {
     height: 100%;
 }
 
@@ -74,7 +73,7 @@
         gap: 0.5rem;
     }
 
-    .active-item-indicator {
+    .nav-bubble {
         height: 2rem;
     }
 
