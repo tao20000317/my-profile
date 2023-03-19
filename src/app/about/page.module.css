@@ -4,6 +4,7 @@
 }
 
 .title {
+    color: var(--active-link-rgb);
     font-size: 2rem;
     margin-bottom: 1rem;
 }

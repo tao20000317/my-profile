@@ -9,8 +9,7 @@ export default function Home() {
     const [clicked, setClicked] = useState(false)
 
     const copyEmailToClipboard = () => {
-        const email = MY_EMAIL
-        navigator.clipboard.writeText(email)
+        navigator.clipboard.writeText(MY_EMAIL)
         setClicked(true)
         setTimeout(() => setClicked(false), 1000) // remove the 'clicked' class after 1 seconds
     }
@@ -28,7 +27,7 @@ export default function Home() {
                 className={clsx(styles.email, { [styles.clicked]: clicked })}
                 onClick={copyEmailToClipboard}
             >
-                {MY_EMAIL}
+                Click to copy my email to your clipboard
             </p>
         </section>
     )
