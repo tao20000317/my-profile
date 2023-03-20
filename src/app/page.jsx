@@ -1,4 +1,4 @@
-"use client"
+"use client" // we need this because we are using react hooks (useState)
 
 import clsx from "classnames"
 import { useState } from "react"

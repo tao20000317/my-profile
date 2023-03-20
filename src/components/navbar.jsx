@@ -1,4 +1,4 @@
-"use client"
+"use client" // we need this because framer-motion uses react context
 
 import clsx from "classnames"
 import Link from "next/link"
