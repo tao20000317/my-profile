@@ -23,9 +23,9 @@ export const metadata = {
     keywords: "personal, website",
     author: MY_NAME,
     icons: {
-        icon: "/favicon-16x16.png",
-        shortcut: "/favicon.ico",
-        apple: "/apple-touch-icon.png",
+        icon: "/favicons/favicon-16x16.png",
+        shortcut: "/favicons/favicon.ico",
+        apple: "/favicons/apple-touch-icon.png",
     },
     robots: {
         index: true,
