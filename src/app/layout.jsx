@@ -22,6 +22,11 @@ export const metadata = {
     description: "This is my personal website.",
     keywords: "personal, website",
     author: MY_NAME,
+    icons: {
+        icon: "/favicon-16x16.png",
+        shortcut: "/favicon.ico",
+        apple: "/apple-touch-icon.png",
+    },
     robots: {
         index: true,
         follow: true,

@@ -13,3 +13,7 @@ or
 ```bash
 yarn lint
 ```
+
+You will need to associate a domain with your Vercel project. You can do this by adding a custom domain in the Vercel dashboard.
+
+After deploying to Vercel, be sure to "promote to production" in the Vercel dashboard.
