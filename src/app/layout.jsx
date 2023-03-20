@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar"
 import "./globals.css"
 
 import styles from "./layout.module.css"
+import { MY_NAME } from "./globals"
 
 const kaisei = localFont({
     src: "../../public/fonts/kaisei-tokumin-latin-700-normal.woff2",
@@ -16,7 +17,22 @@ const kaisei = localFont({
 
 export const metadata = {
     title: "My Personal Website",
+    charset: "UTF-8",
+    viewport: "width=device-width, initial-scale=1.0",
     description: "This is my personal website.",
+    keywords: "personal, website",
+    author: MY_NAME,
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+            "max-video-preview": -1,
+            "max-image-preview": "large",
+            "max-snippet": -1,
+        },
+    },
 }
 
 export default function RootLayout({ children }) {
