@@ -14,9 +14,7 @@
 
 .nav-items-container {
     display: flex;
-
     justify-content: center;
-
     gap: 0.5rem;
 }
 
@@ -24,7 +22,6 @@
     transition: all 0.2s ease-in-out;
 
     height: 2rem;
-
     padding: 0.25rem 0.5rem;
 
     display: flex;

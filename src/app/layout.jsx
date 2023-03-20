@@ -1,3 +1,5 @@
+"use client"
+
 import clsx from "classnames"
 import localFont from "@next/font/local"
 

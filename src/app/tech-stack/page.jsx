@@ -1,14 +1,18 @@
+"use client"
+
 import Image from "next/image"
 import styles from "./page.module.css"
 
 const techStack = [
     {
+        key: "react",
         name: "React",
         description: "A JavaScript library for building user interfaces",
         url: "https://reactjs.org/",
         svg: "react.svg",
     },
     {
+        key: "next-js",
         name: "Next.js",
         description:
             "A React framework for building production-ready websites and applications",
@@ -22,13 +26,18 @@ export default function MyTechStack() {
         <section className={styles.section}>
             <ul className={styles.list}>
                 {techStack.map((tech) => (
-                    <a href={tech.url} target="_blank" rel="noreferrer">
-                        <li className={styles.listItem} key={tech.name}>
-                            <a className={styles.link}>{tech.name}</a>
+                    <a
+                        key={tech.key}
+                        href={tech.url}
+                        target="_blank"
+                        rel="noreferrer"
+                    >
+                        <li className={styles["list-item"]} key={tech.name}>
+                            <p className={styles.link}>{tech.name}</p>
                             <p className={styles.description}>
                                 {tech.description}
                             </p>
-                            <div className={styles.imageWrapper}>
+                            <div className={styles["image-wrapper"]}>
                                 <Image
                                     className={styles.logo}
                                     src={`/${tech.svg}`}
