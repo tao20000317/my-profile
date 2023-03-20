@@ -18,10 +18,10 @@ export default function Home() {
         <section className={styles.section}>
             <h1 className={styles.title}>Hello!</h1>
             <p className={styles.text}>
-                Welcome to my personal website! I'm passionate about programming
-                and enjoy creating innovative solutions to complex problems.
-                Here, you'll find my portfolio, blog, and ways to connect with
-                me. Feel free to explore and get in touch!
+                Welcome to my personal website! I&apos;m passionate about
+                programming and enjoy creating innovative solutions to complex
+                problems. Here, you&apos;ll find my portfolio, blog, and ways to
+                connect with me. Feel free to explore and get in touch!
             </p>
             <p
                 className={clsx(styles.email, { [styles.clicked]: clicked })}
