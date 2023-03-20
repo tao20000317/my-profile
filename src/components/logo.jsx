@@ -2,7 +2,7 @@
 
 import Link from "next/link"
 import Image from "next/image"
-import { MY_NAME } from "@/globals"
+import { MY_NAME } from "@/app/globals"
 
 export default function Logo() {
     return (

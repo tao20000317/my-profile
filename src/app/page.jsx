@@ -2,7 +2,7 @@
 
 import clsx from "classnames"
 import { useState } from "react"
-import { MY_EMAIL } from "@/globals"
+import { MY_EMAIL } from "@/app/globals"
 import styles from "./page.module.css"
 
 export default function Home() {
