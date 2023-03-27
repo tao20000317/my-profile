@@ -29,7 +29,7 @@ const navItems = {
         width: 63,
     },
     "/tech-stack": {
-        name: "tech stack",
+        name: "cooking",
         mobileX: 137,
         desktop: [1, 82], // x, y
         width: 96,
